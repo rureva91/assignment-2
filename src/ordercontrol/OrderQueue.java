@@ -20,10 +20,7 @@ import java.util.ArrayDeque;
 import java.util.Date;
 import java.util.Queue;
 
-/**
- *
- * @author Len Payne <len.payne@lambtoncollege.ca>
- */
+
 public class OrderQueue {
     Queue<Order> orderQueue = new ArrayDeque<>();
     

@@ -241,5 +241,33 @@ public class OrderTest {
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
+    @Test 
+    public void testwhencustomerIDExistsandpurchasesExistthensettheTimeReceived(){
+        
+    }
+    @Test 
+    public void testwhencustomerIDExistsandpurchasesExistthenThrowException(){
+        
+    }
+     @Test 
+    public void testwhenorderinthesystemThenreturntheOrderearliesttimerecieveddoesnottimeprocessed(){
+        
+    }
+     @Test 
+    public void testwhenorderhastimeprocessedandtimerecievedThensetthetime(){
+        
+    }
+      @Test 
+    public void testwhenorderhasNotimeprocessedandtimerecievedThenThrowException(){
+        
+    }
+     @Test 
+    public void testwhenorderdoesNotHavetimerecievedThenThrowException(){
+        
+    }
+      @Test 
+    public void testwhenorderhastimerecievedThensetthetime(){
+        
+    }
     
 }

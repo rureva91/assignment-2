@@ -16,10 +16,7 @@
 
 package ordercontrol;
 
-/**
- *
- * @author Len Payne <len.payne@lambtoncollege.ca>
- */
+
 public class Purchase {
     private String productId;
     private int quantity;

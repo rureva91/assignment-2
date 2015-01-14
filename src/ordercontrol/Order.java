@@ -20,10 +20,6 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-/**
- *
- * @author Len Payne <len.payne@lambtoncollege.ca>
- */
 public class Order {
     private String customerId;
     private String customerName;
