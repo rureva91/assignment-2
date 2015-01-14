@@ -6,6 +6,8 @@
 
 package ordercontrol;
 
+import java.util.Scanner;
+
 /**
  *
  * @author c0640045
@@ -17,7 +19,9 @@ public class OrderControl {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("hello");
+        System.out.println("Please input the customer id:");
+        Scanner sc = new Scanner(System.in);
+        String customerid = sc.nextLine();
     }
     
 }
