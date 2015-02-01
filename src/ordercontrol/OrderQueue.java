@@ -17,15 +17,46 @@
 package ordercontrol;
 
 import java.util.ArrayDeque;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.Queue;
 
-
+/**
+ *
+ * @author  <c0643680>
+ */
 public class OrderQueue {
     Queue<Order> orderQueue = new ArrayDeque<>();
     
-    public void add(Order order) {
-        orderQueue.add(order);
-        order.setTimeReceived(new Date());
+    public void add(Order ord) throws Exception {
+        String customerId = ord.getCustomerId();
+        String customerName = ord.getCustomerName();
+        List<Purchase> listOfPurchase = ord.getListOfPurchases();
+        if(customerId.isEmpty() || customerName.isEmpty()){
+            throw new customerEmptyException();
+        }
+        else if(listOfPurchase.isEmpty()){
+            throw new listEmptyException();
+        }
+        else{
+            orderQueue.add(ord);
+            ord.setTimeReceived(new Date());
+        }
+    }
+    public Order next() {
+        return orderQueue.element();
+    }
+
+    private static class customerEmptyException extends Exception {
+
+        public customerEmptyException() {
+        }
+    }
+
+    private static class listEmptyException extends Exception {
+
+        public listEmptyException() {
+        }
     }
 }
